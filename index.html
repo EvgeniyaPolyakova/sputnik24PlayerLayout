@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="cat.jpeg" width="766" height="443" /> -->
+
+      <!-- <div class="sputnik24-spinner">
+        <div class="sputnik24-spinner-container">
+          <div class="sputnik24-spinner-rotator">
+            <div class="sputnik24-spinner-left">
+              <div class="sputnik24-spinner-circle"></div>
+            </div>
+            <div class="sputnik24-spinner-right">
+              <div class="sputnik24-spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="sputnik24-controls">
+        <div class="sputnik24-gradient-bottom"></div>
+
+        <button
+          class="sputnik24-button sputnik24-playing-toggle sputnik24-play"
+        ></button>
+
+        <div class="sputnik24-volume-area">
+          <button class="sputnik24-button sputnik24-mute-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="volume-icon"
+              viewBox="0 0 36 36"
+            >
+              <path
+                d="M8,15h4l1.365-1.365L17,17.27v8.73l-5-5h-4v-6Zm9-5v4.73l-2.365-2.365L17,10Zm4.5,8c0,.37752-.0464.74503-.13377,1.09623L19,16.73L19,14c1.48.74,2.5,2.26,2.5,4ZM19,22v-2.73l1.52765,1.52765C20.11741,21.31122,19.59601,21.72616,19,22Z"
+                fill="#fff"
+              />
+              <path
+                class="high-level"
+                d="M19,9.23c4.01.91,7,4.49,7,8.77c0,1.64601-.44223,3.18848-1.21463,4.51537l-1.4776-1.4776C23.75132,20.11881,24,19.08828,24,18c0-3.17-2.11-5.85-5-6.71v-2.06Zm0,17.54v-2.06c1.29773-.38618,2.43819-1.13934,3.30094-2.13906l1.41559,1.41559C22.49294,25.35598,20.85569,26.34888,19,26.77Z"
+                fill="#fff"
+              />
+              <path
+                class="mute-slash"
+                d="M9.25,9L7.98,10.27L24.71,27l1.27-1.27Z"
+                fill="#fff"
+              />
+              <path
+                class="mute-path"
+                d="M8,21 L12,21 L17,26 L17,10 L12,15 L8,15 L8,21 Z M19,14 L19,22 C20.48,21.32 21.5,19.77 21.5,18 C21.5,16.26 20.48,14.74 19,14 Z"
+                fill="#fff"
+              />
+              <path
+                class="mute-path high-level"
+                d="M19,11.29 C21.89,12.15 24,14.83 24,18 C24,21.17 21.89,23.85 19,24.71 L19,26.77 C23.01,25.86 26,22.28 26,18 C26,13.72 23.01,10.14 19,9.23 L19,11.29 Z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
+          <div class="sputnik24-volume-panel">
+            <div class="sputnik24-volume-slider">
+              <input
+                type="range"
+                class="sputnik24-volume-range"
+                value="50"
+                step="5"
+              />
+              <div class="sputnik24-volume-progress"></div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="sputnik24-button sputnik24-fullscreen-toggle sputnik24-fullscreen"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fullscreen-icon"
+            height="100%"
+            viewBox="0 0 36 36"
+            width="100%"
+          >
+            <g class="fullscreen-icon-corner-0">
+              <path
+                d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="fullscreen-icon-corner-1">
+              <path
+                d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="fullscreen-icon-corner-2">
+              <path
+                d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="fullscreen-icon-corner-3">
+              <path
+                d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="exit-fullscreen-icon"
+            height="100%"
+            viewBox="0 0 36 36"
+            width="100%"
+          >
+            <g class="exit-fullscreen-icon-corner-2">
+              <path
+                d="m 14,14 -4,0 0,2 6,0 0,-6 -2,0 0,4 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="exit-fullscreen-icon-corner-3">
+              <path
+                d="m 22,14 0,-4 -2,0 0,6 6,0 0,-2 -4,0 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="exit-fullscreen-icon-corner-0">
+              <path
+                d="m 20,26 2,0 0,-4 4,0 0,-2 -6,0 0,6 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+            <g class="exit-fullscreen-icon-corner-1">
+              <path
+                d="m 10,22 4,0 0,4 2,0 0,-6 -6,0 0,2 0,0 z"
+                fill="#FFFFFF"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
