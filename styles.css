@@ -592,3 +592,167 @@
   background: #fff;
   height: 100%;
 }
+
+/* SETTINGS */
+p {
+  margin: 0;
+}
+.sputnik24-settings-button {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.sputnik24-settings-button .settings-icon {
+  opacity: 0.9;
+  pointer-events: none;
+  transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1),
+    opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transform: rotate(0deg);
+}
+
+.sputnik24-settings-button:hover .settings-icon {
+  opacity: 1;
+}
+
+.sputnik24-settings-button.show-settings-menu .settings-icon {
+  opacity: 1;
+  transform: rotate(30deg);
+}
+
+.sputnik24-settings-menu {
+  width: 417px;
+  border-radius: 2px;
+  background: rgba(28, 28, 28, 0.9);
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  display: none;
+}
+
+.sputnik24-settings-menu.active {
+  display: block;
+}
+
+.sputnik24-panel {
+  padding: 8px 0;
+}
+
+.sputnik24-menu-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.sputnik24-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sputnik24-menu-item__icon {
+  padding: 0 10px;
+  position: relative;
+  height: 40px;
+  width: 44px;
+}
+
+.sputnik24-menu-item__icon .quality-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sputnik24-menu-item__label {
+  color: #fff;
+}
+
+.sputnik24-menu-item__content {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.sputnik24-menu-item__content-label {
+  color: rgb(238, 238, 238);
+}
+
+.sputnik24-menu-item__label-secondary {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.sputnik24-menu-item__content .right-arrow {
+  width: 32px;
+  height: 32px;
+}
+
+/* QUALITY MENU */
+
+.sputnik24-quality-menu {
+  width: 251px;
+  background: rgba(28, 28, 28, 0.9);
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  border-radius: 2px;
+  display: none;
+}
+
+.sputnik24-quality-menu.show-quality-menu {
+  display: block;
+}
+
+.sputnik24-quality-menu__header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 56px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sputnik24-quality-menu__header .left-arrow {
+  transform: rotate(180deg);
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.sputnik24-quality-menu__body {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.sputnik24-quality-menu__body-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 35px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.sputnik24-quality-menu__body-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sputnik24-quality-menu__body-item span {
+  color: rgb(238, 238, 238);
+}
+
+.sputnik24-quality-menu__body-item.selected-quality::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("./assets/icons/check-mark.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
