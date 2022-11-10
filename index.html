@@ -27,7 +27,9 @@
 
         <button
           class="sputnik24-button sputnik24-playing-toggle sputnik24-play"
-        ></button>
+        >
+          <span class="sputnik24-control-tooltip">Смотреть (k)</span>
+        </button>
 
         <div class="sputnik24-volume-area">
           <button class="sputnik24-button sputnik24-mute-toggle">
@@ -145,7 +147,9 @@
           </svg>
         </button>
 
-        <button class="sputnik24-button sputnik24-settings-button">
+        <button
+          class="sputnik24-button sputnik24-settings-button sputnik24-hd-quality-badge"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="settings-icon"
@@ -182,7 +186,11 @@
                 <span class="sputnik24-menu-item__content-label"
                   >Автонастройка</span
                 >
-                <span class="sputnik24-menu-item__label-secondary">1080p</span>
+                <span class="sputnik24-menu-item__label-secondary"
+                  >1080p<sup class="sputnik24-menu-item__swatch-badge"
+                    >HD</sup
+                  ></span
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="right-arrow"
@@ -219,7 +227,11 @@
           </div>
           <ul class="sputnik24-quality-menu__body">
             <li class="sputnik24-quality-menu__body-item">
-              <span>1080p</span>
+              <span
+                >1080p<sup class="sputnik24-menu-item__swatch-badge"
+                  >HD</sup
+                ></span
+              >
             </li>
             <li class="sputnik24-quality-menu__body-item">
               <span>720p</span>
@@ -229,6 +241,22 @@
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="sputnik24-error">
+      <div class="sputnik24-error-content">
+        <div class="sputnik24-error-title">
+          <p class="sputnik24-error-main-title">Упс! Ошибка...</p>
+          <p class="sputnik24-error-subtitle">
+            Перезагрузите страницу или повторите попытку позже
+          </p>
+        </div>
+        <img
+          src="./assets/img/error.png"
+          width="274"
+          height="307"
+          class="sputnik24-error-img"
+        />
       </div>
     </div>
 
